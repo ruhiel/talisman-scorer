@@ -1,0 +1,25 @@
+.tbl-m01 {
+  border-collapse: separate;
+  border-spacing: 5px;
+} 
+.tbl-m01.m02 {
+  border-spacing: 10px 0;
+  margin: 0 auto 100px;
+}
+.tbl-m01.m02 th {
+  background: #fbf5f5;
+  border: none;
+}
+.tbl-m01.m02 td {
+  border: none;
+}
+
+@media screen and (max-width: 640px) {
+  .tbl-m01 th {
+    width: 20%;
+  }
+  .tbl-m01 td {
+    border-bottom: solid 1px #ccc;
+    width: 25%;
+  }
+}
