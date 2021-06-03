@@ -13,6 +13,9 @@
 .tbl-m01.m02 td {
   border: none;
 }
+.tbl-m01.m02 .select2 {
+  width: 200px;
+}
 
 @media screen and (max-width: 640px) {
   .tbl-m01 th {
