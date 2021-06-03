@@ -16,6 +16,9 @@
 .tbl-m01.m02 .select2 {
   width: 200px;
 }
+.numberbox {
+  text-align: right;
+}
 
 @media screen and (max-width: 640px) {
   .tbl-m01 th {

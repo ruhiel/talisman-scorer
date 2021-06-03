@@ -7,17 +7,28 @@
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/select2.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./js/calc.js"></script>
     <script src="./js/select2.min.js"></script>
+    <script src="./js/bignumber.min.js"></script>
+    <script src="./js/Num2DecStrl.js"></script>
+    <script src="./js/calc.js"></script>
 </head>
 
 <body>
     <table class="tbl-m01 m02">
         <tr>
+            <th>種別</th>
+            <td>
+                <select id="typeselect">
+                    <option value="0" selected>幽玄</option>
+                    <option value="1">輪廻</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
             <th>スキル1</th>
             <td>
                 <select class="select2" id="skill1">
-                    <option selected>---</option>
+                    <option selected>-</option>
                     <option>超会心</option>
                     <option>抜刀術【技】</option>
                     <option>達人芸</option>
@@ -40,7 +51,7 @@
                     <option>死中に活</option>
                     <option>火事場力</option>
                     <option>挑戦者</option>
-                    <option>弱点特攻</option>
+                    <option>弱点特効</option>
                     <option>見切り</option>
                     <option>渾身</option>
                     <option>力の解放</option>
@@ -122,7 +133,7 @@
                 </select>
             </td>
             <td>
-                <select id="skill1lv">
+                <select class="lvselect" id="skilllv1">
                 </select>
             </td>
         </tr>
@@ -130,7 +141,7 @@
             <th>スキル2</th>
             <td>
                 <select class="select2" id="skill2">
-                    <option selected>---</option>
+                    <option selected>-</option>
                     <option>超会心</option>
                     <option>抜刀術【技】</option>
                     <option>達人芸</option>
@@ -153,7 +164,7 @@
                     <option>死中に活</option>
                     <option>火事場力</option>
                     <option>挑戦者</option>
-                    <option>弱点特攻</option>
+                    <option>弱点特効</option>
                     <option>見切り</option>
                     <option>渾身</option>
                     <option>力の解放</option>
@@ -235,8 +246,47 @@
                 </select>
             </td>
             <td>
-                <select id="skill2lv">
+                <select class="lvselect" id="skilllv2">
                 </select>
+            </td>
+        </tr>
+        <tr>
+            <th>スロット1</th>
+            <td>
+                <select id="slot1">
+                    <option value="0" selected>なし</option>
+                    <option value="1">Lv1</option>
+                    <option value="2">Lv2</option>
+                    <option value="3">Lv3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>スロット2</th>
+            <td>
+                <select id="slot2">
+                    <option value="0" selected>なし</option>
+                    <option value="1">Lv1</option>
+                    <option value="2">Lv2</option>
+                    <option value="3">Lv3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>スロット3</th>
+            <td>
+                <select id="slot3">
+                    <option value="0" selected>なし</option>
+                    <option value="1">Lv1</option>
+                    <option value="2">Lv2</option>
+                    <option value="3">Lv3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>出現率(%)</th>
+            <td>
+                <input class="numberbox" id="rateinput" type="text" readonly value="0"/>
             </td>
         </tr>
     </table>
