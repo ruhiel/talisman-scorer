@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-    <title>神おま測定器</title>
+    <title>護石スコアラー</title>
     <meta charset="utf-8">
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/select2.min.css" rel="stylesheet" />
@@ -49,7 +49,7 @@
         <tr>
             <th>スロット1</th>
             <td>
-                <select id="slot1">
+                <select id="slot1" class="slotselect">
                     <option value="0" selected>なし</option>
                     <option value="1">Lv1</option>
                     <option value="2">Lv2</option>
@@ -60,7 +60,7 @@
         <tr>
             <th>スロット2</th>
             <td>
-                <select id="slot2">
+                <select id="slot2" class="slotselect">
                     <option value="0" selected>なし</option>
                     <option value="1">Lv1</option>
                     <option value="2">Lv2</option>
@@ -71,7 +71,7 @@
         <tr>
             <th>スロット3</th>
             <td>
-                <select id="slot3">
+                <select id="slot3" class="slotselect">
                     <option value="0" selected>なし</option>
                     <option value="1">Lv1</option>
                     <option value="2">Lv2</option>
@@ -80,21 +80,27 @@
             </td>
         </tr>
         <tr>
+            <th>護石名</th>
+            <td>
+                <input class="numberbox" id="talismanname" type="text" readonly value="" />
+            </td>
+        </tr>
+        <tr>
             <th>出現率(%)</th>
             <td>
-                <input class="numberbox" id="rateinput" type="text" readonly value="0"/>
+                <input class="numberbox" id="rateinput" type="text" readonly value="0" />
             </td>
         </tr>
         <tr>
             <th>護石スコア(期待値)</th>
             <td>
-                <input class="numberbox" id="scoreinput" type="text" readonly value="0"/>
+                <input class="numberbox" id="scoreinput" type="text" readonly value="0" />
             </td>
         </tr>
         <tr>
             <th>護石ランク</th>
             <td>
-                <input class="numberbox" id="rankinput" type="text" readonly value=""/>
+                <input class="numberbox" id="rankinput" type="text" readonly value="" />
             </td>
         </tr>
     </table>

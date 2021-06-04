@@ -91,7 +91,7 @@ function countRankSkill(rank, index) {
 
     var array = listArray[type][index].split(',');
     for (var i = 0; i < array.length; i++) {
-        if(getSkillRank(array[i]) == rank) {
+        if (getSkillRank(array[i]) == rank) {
             count++;
         }
     }
@@ -100,19 +100,19 @@ function countRankSkill(rank, index) {
 }
 
 function comma(num) {
-    return String(num).replace( /(\d)(?=(\d\d\d)+(?!\d))/g, '$1,');
+    return String(num).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1,');
 }
 function getRankText(score) {
-    if(score.gte(100000000)) {
+    if (score.gte(100000000)) {
         return "神おま(UR)";
-    } else if(score.gte(10000000)) {
+    } else if (score.gte(10000000)) {
         return "神おま(SSR)";
-    } else if(score.gte(1000000)) {
+    } else if (score.gte(1000000)) {
         return "神おま(SR)";
-    } else if(score.gte(100000)) {
+    } else if (score.gte(100000)) {
         return "強おま(R)";
     } else {
-        return "並おま(C)";
+        return "並おま(N)";
     }
 }
 function rateCalc() {
@@ -146,13 +146,13 @@ function rateCalc() {
         var skill2rankRate = rankRate[skill2rank][type];
 
         result = result.times(skill2rankRate);
-    
+
         var skill2rate = getSkillRate(skill2name)[1][skill2lv];
-    
+
         result = result.times(skill2rate);
 
         var count2 = countRankSkill(skill2rank, 1);
-    
+
         result = result.div(count2);
     }
 
@@ -177,9 +177,21 @@ function rateCalc() {
     $('#scoreinput').val(comma(Num2FracStr(score.toFixed(0).toString())));
 
     $('#rankinput').val(getRankText(score));
+
+    var talismanname = (skill1name === "---" || skill1name === undefined) ? "" : skill1name;
+    talismanname += (Number(skill1lv) + 1).toString();
+
+    if (skill2name != "---") {
+        talismanname += skill2name;
+        talismanname += (Number(skill2lv) + 1).toString();
+    }
+
+    talismanname += 's' + slottext;
+
+    $('#talismanname').val(talismanname);
 }
 
-function createList(){
+function createList() {
     $('#skill1 > option').remove();
 
     var type = $('#typeselect option:selected').val();
@@ -209,10 +221,13 @@ function createList(){
     $('#skilllv1 > option').remove();
     $('#skilllv2 > option').remove();
     $('#rateinput').val("0");
+    $('#scoreinput').val("0");
+    $('#rankinput').val("");
+    $('#talismanname').val("");
 }
 
 $(document).ready(function () {
-    
+
     $('#skill1').select2({ width: 'resolve' });
     $('#skill2').select2({ width: 'resolve' });
 
@@ -223,16 +238,18 @@ $(document).ready(function () {
         var skillindexString = idname.replace('skill', '');
         var skillindex = Number(idname.replace('skill', '')) - 1;
         var skillname = $('#' + idname + ' option:selected').text();
-        
+
         $('#skilllv' + skillindexString + ' > option').remove();
 
-        if(skillname != '---') {
+        if (skillname != '---') {
             var skillRate = getSkillRate(skillname)[skillindex];
 
             for (var i = 0; i < skillRate.length; i++) {
                 $('#skilllv' + skillindexString).append($('<option>').html("Lv" + (i + 1)).val(i));
             }
         }
+
+        $(".slotselect").val('0');
 
     });
 
