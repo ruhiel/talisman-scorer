@@ -1,3 +1,13 @@
+var listArray = [
+    [
+        '超会心,抜刀術【技】,達人芸,匠,心眼,ランナー,集中,攻めの守勢,砲術,貫通弾・貫通矢強化,散弾・拡散矢強化,装填拡張,速射強化,幸運,キノコ大好き,ジャンプ鉄人,攻撃,フルチャージ,逆恨み,死中に活,火事場力,挑戦者,弱点特効,見切り,渾身,力の解放,会心撃【属性】,麻痺属性強化,睡眠属性強化,爆破属性強化,業物,剛刃研磨,スタミナ急速回復,弾丸節約,通常弾・連射矢強化,特殊射撃強化,弾道強化,砲弾装填,ガード性能,ガード強化,強化持続,鬼火纏,逆襲,鈍器使い,抜刀術【力】,火属性攻撃強化,水属性攻撃強化,雷属性攻撃強化,氷属性攻撃強化,龍属性攻撃強化,毒属性強化,KO術,納刀術,高速変形,反動軽減,装填速度,ブレ抑制,防御,精霊の加護,気絶耐性,属性やられ耐性,砥石使用高速化,ひるみ軽減,回避性能,回避距離UP,耳栓,風圧耐性,耐震,早食い,破壊王,広域化,泡沫の舞,不屈,滑走強化,火耐性,水耐性,雷耐性,氷耐性,龍耐性,毒耐性,麻痺耐性,睡眠耐性,爆破やられ耐性,泥雪耐性,腹減り耐性,体術,壁面移動,体力回復量UP,回復速度,アイテム使用強化,満足感,植生学,地質学,ボマー,剥ぎ取り鉄人,飛び込み,陽動,乗り名人,翔蟲使い,スタミナ奪取,笛吹き名人',
+        '超会心,抜刀術【技】,達人芸,匠,心眼,ランナー,集中,攻めの守勢,砲術,貫通弾・貫通矢強化,散弾・拡散矢強化,装填拡張,速射強化,幸運,キノコ大好き,ジャンプ鉄人,攻撃,フルチャージ,逆恨み,死中に活,火事場力,挑戦者,弱点特効,見切り,渾身,力の解放,会心撃【属性】,麻痺属性強化,睡眠属性強化,爆破属性強化,業物,剛刃研磨,スタミナ急速回復,弾丸節約,通常弾・連射矢強化,特殊射撃強化,弾道強化,砲弾装填,ガード性能,ガード強化,強化持続,鬼火纏,逆襲,鈍器使い,抜刀術【力】,火属性攻撃強化,水属性攻撃強化,雷属性攻撃強化,氷属性攻撃強化,龍属性攻撃強化,毒属性強化,KO術,納刀術,高速変形,反動軽減,装填速度,ブレ抑制,防御,精霊の加護,気絶耐性,属性やられ耐性,砥石使用高速化,ひるみ軽減,回避性能,回避距離UP,耳栓,風圧耐性,耐震,早食い,破壊王,広域化,泡沫の舞,不屈,滑走強化,火耐性,水耐性,雷耐性,氷耐性,龍耐性,毒耐性,麻痺耐性,睡眠耐性,爆破やられ耐性,泥雪耐性,腹減り耐性,体術,壁面移動,体力回復量UP,回復速度,アイテム使用強化,満足感,植生学,地質学,ボマー,剥ぎ取り鉄人,飛び込み,陽動,乗り名人,翔蟲使い,スタミナ奪取,笛吹き名人'
+    ],
+    [
+        '超会心,抜刀術【技】,達人芸,匠,心眼,ランナー,集中,攻めの守勢,砲術,貫通弾・貫通矢強化,散弾・拡散矢強化,装填拡張,速射強化,幸運,キノコ大好き,ジャンプ鉄人,攻撃,フルチャージ,逆恨み,死中に活,火事場力,挑戦者,弱点特効,見切り,渾身,力の解放,会心撃【属性】,麻痺属性強化,睡眠属性強化,爆破属性強化,業物,剛刃研磨,スタミナ急速回復,弾丸節約,通常弾・連射矢強化,特殊射撃強化,弾道強化,砲弾装填,ガード性能,ガード強化,強化持続,鬼火纏,逆襲,鈍器使い,抜刀術【力】,KO術,納刀術,高速変形,反動軽減,装填速度,ブレ抑制,防御,精霊の加護,気絶耐性,属性やられ耐性,砥石使用高速化,ひるみ軽減,回避性能,回避距離UP,耳栓,風圧耐性,耐震,早食い,破壊王,広域化,泡沫の舞,不屈,滑走強化,水耐性,雷耐性,氷耐性,龍耐性,毒耐性,麻痺耐性,腹減り耐性,体術,壁面移動,体力回復量UP,回復速度,アイテム使用強化,満足感,植生学,剥ぎ取り鉄人,乗り名人,翔蟲使い,スタミナ奪取,笛吹き名人',
+        '超会心,抜刀術【技】,達人芸,匠,心眼,ランナー,集中,攻めの守勢,砲術,貫通弾・貫通矢強化,散弾・拡散矢強化,装填拡張,速射強化,幸運,キノコ大好き,ジャンプ鉄人,攻撃,フルチャージ,逆恨み,死中に活,火事場力,挑戦者,弱点特効,見切り,渾身,力の解放,会心撃【属性】,麻痺属性強化,睡眠属性強化,爆破属性強化,業物,剛刃研磨,スタミナ急速回復,弾丸節約,通常弾・連射矢強化,特殊射撃強化,弾道強化,砲弾装填,ガード性能,ガード強化,強化持続,鬼火纏,逆襲,鈍器使い,抜刀術【力】,KO術,納刀術,高速変形,反動軽減,装填速度,ブレ抑制,防御,精霊の加護,気絶耐性,属性やられ耐性,砥石使用高速化,ひるみ軽減,回避性能,回避距離UP,耳栓,風圧耐性,耐震,早食い,破壊王,広域化,泡沫の舞,不屈,滑走強化,腹減り耐性,体術,壁面移動,体力回復量UP,回復速度,アイテム使用強化,満足感,剥ぎ取り鉄人,乗り名人,翔蟲使い,スタミナ奪取,笛吹き名人'
+    ]
+];
 var rankMap = {
     'S': ['超会心', '抜刀術【技】', '達人芸', '匠', '心眼', 'ランナー', '集中', '攻めの守勢', '砲術', '貫通弾・貫通矢強化', '散弾・拡散矢強化', '装填拡張', '速射強化', '幸運', 'キノコ大好き', 'ジャンプ鉄人'],
     'A': ['攻撃', 'フルチャージ', '逆恨み', '死中に活', '火事場力', '挑戦者', '弱点特効', '見切り', '渾身', '力の解放', '会心撃【属性】', '麻痺属性強化', '睡眠属性強化', '爆破属性強化', '業物', '剛刃研磨', 'スタミナ急速回復', '弾丸節約', '通常弾・連射矢強化', '特殊射撃強化', '弾道強化', '砲弾装填', 'ガード性能', 'ガード強化', '強化持続', '鬼火纏'],
@@ -13,7 +23,7 @@ var rateMap = {
     'ブレ抑制': [[0.7, 0.3], [0.8, 0.1]],
     '泥雪耐性': [[0.7, 0.3], [0.7, 0.3]],
     '精霊の加護': [[0.75, 0.2, 0.05], [0.8, 0.2]],
-    '鈍器使い|耳栓': [[], []],
+    '鈍器使い|耳栓': [[0.75, 0.2, 0.05], [0.75, 0.25]],
     '火属性攻撃強化|水属性攻撃強化|雷属性攻撃強化|氷属性攻撃強化|龍属性攻撃強化|毒属性強化': [[0.5, 0.35, 0.15], [0.7, 0.3]],
     '防御': [[0.6, 0.35, 0.05], [0.9, 0.05, 0.05]],
     '水耐性|雷耐性|氷耐性|龍耐性|毒耐性|麻痺耐性|睡眠耐性|翔蟲使い': [[0.86, 0.09, 0.05], [0.5, 0.45, 0.05]],
@@ -75,6 +85,36 @@ function getSkillRate(skill) {
     return [[1], [1]];
 }
 
+function countRankSkill(rank, index) {
+    var count = 0;
+    var type = $('#typeselect option:selected').val();
+
+    var array = listArray[type][index].split(',');
+    for (var i = 0; i < array.length; i++) {
+        if(getSkillRank(array[i]) == rank) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+function comma(num) {
+    return String(num).replace( /(\d)(?=(\d\d\d)+(?!\d))/g, '$1,');
+}
+function getRankText(score) {
+    if(score.gte(100000000)) {
+        return "神おま(UR)";
+    } else if(score.gte(10000000)) {
+        return "神おま(SSR)";
+    } else if(score.gte(1000000)) {
+        return "神おま(SR)";
+    } else if(score.gte(100000)) {
+        return "強おま(R)";
+    } else {
+        return "並おま(C)";
+    }
+}
 function rateCalc() {
     var result = BigNumber(1);
     var skill1name = $('#skill1 option:selected').text();
@@ -85,7 +125,6 @@ function rateCalc() {
     var skill2rank = getSkillRank(skill2name);
     var type = $('#typeselect option:selected').val();
 
-
     var skill1rankRate = rankRate[skill1rank][type];
 
     result = result.times(skill1rankRate);
@@ -94,11 +133,11 @@ function rateCalc() {
 
     result = result.times(skill1rate);
 
-    result = result.div(rankMap[skill1rank].length);
+    var count1 = countRankSkill(skill1rank, 0);
 
+    result = result.div(count1);
 
-
-    if (skill2name == '-') {
+    if (skill2name == '---') {
         var num = BigNumber(1).minus(secondSkillRate[skill1rank][type]);
         result = result.times(num);
     } else {
@@ -111,8 +150,10 @@ function rateCalc() {
         var skill2rate = getSkillRate(skill2name)[1][skill2lv];
     
         result = result.times(skill2rate);
+
+        var count2 = countRankSkill(skill2rank, 1);
     
-        result = result.div(rankMap[skill2rank].length);
+        result = result.div(count2);
     }
 
     var slottext = $('#slot1 option:selected').val() + $('#slot2 option:selected').val() + $('#slot3 option:selected').val();
@@ -125,28 +166,77 @@ function rateCalc() {
 
     result = result.times(slotrate);
 
-    result = result.times(100);
+    result = result.dp(11);
 
-    $('#rateinput').val(Num2FracStr(result.toFixed(10).toString()));
+    var percent = result.times(100);
+
+    $('#rateinput').val(Num2FracStr(percent.toString()));
+
+    var score = BigNumber(1).div(result);
+
+    $('#scoreinput').val(comma(Num2FracStr(score.toFixed(0).toString())));
+
+    $('#rankinput').val(getRankText(score));
+}
+
+function createList(){
+    $('#skill1 > option').remove();
+
+    var type = $('#typeselect option:selected').val();
+
+    var $newOption = $("<option selected></option>").val(-1).text('---');
+    $('#skill1').append($newOption);
+
+    var list = listArray[type][0].split(',');
+
+    for (var i = 0; i < list.length; i++) {
+        var $newOption = $("<option></option>").val(i).text(list[i]);
+        $('#skill1').append($newOption);
+    }
+
+    $('#skill2 > option').remove();
+
+    var $newOption = $("<option selected></option>").val(-1).text('---');
+    $('#skill2').append($newOption);
+
+    list = listArray[type][1].split(',');
+
+    for (var i = 0; i < list.length; i++) {
+        var $newOption = $("<option></option>").val(i).text(list[i]);
+        $('#skill2').append($newOption);
+    }
+
+    $('#skilllv1 > option').remove();
+    $('#skilllv2 > option').remove();
+    $('#rateinput').val("0");
 }
 
 $(document).ready(function () {
-    $('.select2').select2({ width: 'resolve' });
+    
+    $('#skill1').select2({ width: 'resolve' });
+    $('#skill2').select2({ width: 'resolve' });
+
+    createList();
 
     $('.select2').change(function () {
         var idname = $(this).attr('id');
         var skillindexString = idname.replace('skill', '');
         var skillindex = Number(idname.replace('skill', '')) - 1;
         var skillname = $('#' + idname + ' option:selected').text();
-        var skillRate = getSkillRate(skillname)[skillindex];
-
+        
         $('#skilllv' + skillindexString + ' > option').remove();
 
-        for (var i = 0; i < skillRate.length; i++) {
-            $('#skilllv' + skillindexString).append($('<option>').html("Lv" + (i + 1)).val(i));
+        if(skillname != '---') {
+            var skillRate = getSkillRate(skillname)[skillindex];
+
+            for (var i = 0; i < skillRate.length; i++) {
+                $('#skilllv' + skillindexString).append($('<option>').html("Lv" + (i + 1)).val(i));
+            }
         }
 
     });
+
+    $("#typeselect").change(createList);
 
     $('select').change(rateCalc);
 });
